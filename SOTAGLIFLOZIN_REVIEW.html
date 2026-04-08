@@ -2304,10 +2304,12 @@
                     allOutcomes: [
                         { shortLabel: 'CV Death/HF Hosp/Urgent HF', title: 'Total CV deaths, HF hospitalizations, and urgent HF visits (revised primary)', tE: 411, cE: 546, type: 'PRIMARY', pubHR: 0.74, pubHR_LCI: 0.63, pubHR_UCI: 0.88 },
                         { shortLabel: 'CV Death', title: 'Death from cardiovascular causes', tE: 100, cE: 117, type: 'SECONDARY', pubHR: 0.9, pubHR_LCI: 0.69, pubHR_UCI: 1.18 },
-                        { shortLabel: 'HbA1c Change', title: 'Change in HbA1c from baseline', tE: 0, cE: 0, type: 'SECONDARY' }
+                        { shortLabel: 'First HF Hosp/Urgent', title: 'First HF hospitalization or urgent HF visit', tE: 0, cE: 0, type: 'SECONDARY', pubHR: 0.67, pubHR_LCI: 0.55, pubHR_UCI: 0.82 },
+                        { shortLabel: 'MACE (original)', title: 'Original primary: first CV death, non-fatal MI, or non-fatal stroke', tE: 0, cE: 0, type: 'SECONDARY', pubHR: 0.84, pubHR_LCI: 0.72, pubHR_UCI: 0.99 },
+                        { shortLabel: 'DKA', title: 'Diabetic ketoacidosis (safety)', tE: 31, cE: 16, type: 'SAFETY' }
                     ],
                     rob: ['low', 'low', 'low', 'low', 'some'],
-                    snippet: 'Bhatt DL et al. N Engl J Med 2021;384:129-139. PMID:33200891. Stopped early (funding).',
+                    snippet: 'Source: ClinicalTrials.gov NCT03315143 (SCORED). Enrollment: 10584. Status: TERMINATED (funding loss). Results posted. Primary: CV death + HHF + urgent HF visits. Bhatt et al. NEJM 2021;384:129-139. PMID:33200891. Stopped early (funding).',
                     evidence: [
                         { label: 'Enrollment & Randomization', source: 'Bhatt DL et al. N Engl J Med 2021;384:129-139 (PMID:33200891)', text: '10,584 patients with T2DM and CKD (eGFR 25-60 mL/min/1.73m2) randomized 1:1 to sotagliflozin 200mg (uptitrated to 400mg) or placebo. 750 sites in 44 countries. Median follow-up 16 months. Trial stopped early due to loss of funding from COVID-19.', highlights: ['10,584', '1:1', 'eGFR 25-60', '750 sites', 'stopped early'] },
                         { label: 'Primary Outcome (Revised)', source: 'Bhatt DL et al. N Engl J Med 2021;384:129-139', text: 'Total events of CV death, HF hospitalization, or urgent HF visit: sotagliflozin 411 events vs placebo 546 events (HR 0.74, 95% CI 0.63-0.88, P<0.001). Originally powered for MACE; revised primary endpoint after early termination. First HF hospitalization or urgent visit: HR 0.67 (0.55-0.82, P<0.001).', highlights: ['411', '546', 'HR 0.74', 'P<0.001', 'HR 0.67'] },
@@ -2322,10 +2324,13 @@
                     publishedHR: 0.67, hrLCI: 0.52, hrUCI: 0.85,
                     allOutcomes: [
                         { shortLabel: 'CV Death/HF Hosp/Urgent HF', title: 'Total CV deaths, HF hospitalizations, and urgent HF visits', tE: 51, cE: 76, type: 'PRIMARY', pubHR: 0.67, pubHR_LCI: 0.52, pubHR_UCI: 0.85 },
-                        { shortLabel: 'CV Death', title: 'Death from cardiovascular causes', tE: 29, cE: 42, type: 'SECONDARY', pubHR: 0.84, pubHR_LCI: 0.58, pubHR_UCI: 1.22 }
+                        { shortLabel: 'CV Death', title: 'Death from cardiovascular causes', tE: 29, cE: 42, type: 'SECONDARY', pubHR: 0.84, pubHR_LCI: 0.58, pubHR_UCI: 1.22 },
+                        { shortLabel: 'ACM', title: 'All-cause mortality', tE: 42, cE: 52, type: 'SECONDARY', pubHR: 0.82, pubHR_LCI: 0.59, pubHR_UCI: 1.14 },
+                        { shortLabel: 'DKA', title: 'Diabetic ketoacidosis (safety)', tE: 0, cE: 0, type: 'SAFETY' },
+                        { shortLabel: 'Diarrhea', title: 'Diarrhea (dual SGLT1/2 GI effect)', tE: 37, cE: 21, type: 'SAFETY' }
                     ],
                     rob: ['low', 'low', 'low', 'low', 'some'],
-                    snippet: 'Bhatt DL et al. N Engl J Med 2021;384:117-128. PMID:33200892. Stopped early (funding).',
+                    snippet: 'Source: ClinicalTrials.gov NCT03521934 (SOLOIST-WHF). Enrollment: 1222. Status: TERMINATED (funding loss). Results posted. Primary: CV death + HHF + urgent HF visits. Bhatt et al. NEJM 2021;384:117-128. PMID:33200892. Stopped early (funding).',
                     evidence: [
                         { label: 'Enrollment & Randomization', source: 'Bhatt DL et al. N Engl J Med 2021;384:117-128 (PMID:33200892)', text: '1,222 patients with T2DM hospitalized for worsening HF (HFrEF or HFpEF), hemodynamically stable, randomized 1:1 to sotagliflozin 200mg (uptitrated to 400mg) or placebo. Initiated before or shortly after hospital discharge. 306 sites in 32 countries. Median follow-up 9 months. Stopped early (funding loss).', highlights: ['1,222', '1:1', 'worsening HF', '306 sites', 'stopped early'] },
                         { label: 'Primary Outcome', source: 'Bhatt DL et al. N Engl J Med 2021;384:117-128', text: 'Total events of CV death, HF hospitalization, or urgent HF visit: sotagliflozin 245 events (51 patients with first event) vs placebo 355 events (76 patients). HR 0.67 (95% CI 0.52-0.85, P<0.001). HFrEF benefit similar to HFpEF (interaction P=0.27).', highlights: ['HR 0.67', 'P<0.001', 'HFrEF similar to HFpEF'] },
