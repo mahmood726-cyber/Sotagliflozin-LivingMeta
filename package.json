@@ -1,0 +1,10 @@
+{
+  "name": "sotagliflozin-livingmeta",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sotagliflozin in Heart Failure and Diabetes: living meta-analysis dashboard.",
+  "scripts": {
+    "test": "node test/smoke.test.js"
+  },
+  "license": "MIT"
+}
